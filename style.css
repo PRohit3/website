@@ -1,0 +1,115 @@
+body{
+    background-color: wheat;
+    color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0cm;
+    line-height: 1.6em;
+}
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+
+}
+#main-header{
+    background-color: coral;
+    color: black;
+
+}
+
+
+#navbar{
+    background-color: turquoise;
+    color: tomato;
+
+}
+#navbar ul{
+    padding: 0cm;
+    list-style: none;
+    
+}
+#navbar li{
+    display: inline;
+    text-align:center;
+}
+#navbar a{
+    color: tomato;
+    align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+
+}
+#showcase{
+ background-image: url("images/light.jpg"); 
+ min-height:500px;
+ text-align: center;  
+}
+#showcase h1{
+    font-size: 30px;
+    padding-top: 300px;
+    line-height: 1.6em;
+}
+
+#main{
+    float:left;
+    width:70%;
+    background-color: yellow;
+    color: tomato;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+#sidebar{
+    float:right;
+    width:30%;
+    background-color: rgb(10, 5, 12);
+    color: rgb(238, 240, 241);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+#main-footer{
+    margin-top: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float: none;
+    }
+    #sidebar{
+        width:100%;
+        float: none;
+    }
+}
+.anime{
+    padding-left: 20%;
+    padding-top: 10%;
+    animation: updown 10s ease-in-out infinite alternate-reverse both;
+    animation-delay: 2s;
+}
+@-webkit-keyframes updown{
+    0%{
+       
+        transform: translateY(20px);
+    }
+    50%{
+        transform:translate3d()
+    }
+
+    100%{
+        
+        transform: translateY(-20px);
+    }
+}
